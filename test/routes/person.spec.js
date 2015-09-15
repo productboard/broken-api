@@ -25,8 +25,7 @@ describe('The "person" endpoint', function () {
     request(server)
       .post('/person')
         .send({
-          name: 'Anne',
-          pets: 'Buster'
+          name: 'Anne'
         })
       .expect('Content-Type', /json/)
       .expect(function (res) {
@@ -44,7 +43,7 @@ describe('The "person" endpoint', function () {
         })
       .expect('Content-Type', /json/)
       .expect(function (res) {
-        if (res.body.greetPets !== 'Hi Buster, YOU\'RE JUST SO FLUFFY! :O ') throw new Error('Buster wasnt greeted properly :(');
+        if (res.body.greetPets !== 'Hi Buster, YOU\'RE JUST SO FLUFFY! :O') throw new Error('Buster wasnt greeted properly :(');
       })
       .end(done);
   });
