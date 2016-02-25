@@ -1,9 +1,9 @@
-## The broken API
+## The Broken API
 
-You've been teaching Little Timmy about JavaScript and NodeJS, but he hasn't had much luck and everything keeps breaking! Luckily, to help him you set him with a node project and wrote some tests to make sure he's doing a good job!
+You've been teaching Little Timmy about JavaScript and NodeJS, but he hasn't had much luck and everything keeps breaking! 
 
-He'd like you to help him by fixing his API, then you can talk him through what you did to fix it!
+When he started you wrote some tests that he was supposed to make pass, but he needs more help. The code he has writen is contained in `./routes/` can you help him fix it?
 
 Don't let Little Timmy down, he's counting on you!
 
-![Image of Yaktocat](http://mashable.com/wp-content/uploads/2013/07/Dr.-Who.gif)
+![Sad Dr](http://mashable.com/wp-content/uploads/2013/07/Dr.-Who.gif)
