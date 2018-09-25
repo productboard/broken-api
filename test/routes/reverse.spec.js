@@ -30,7 +30,8 @@ describe('The "reverse" endpoint', function () {
 
   it('should reverse strings containing two-byte UTF-16 characters', function testSlash(done) {
     request(server)
-      .get('/reverse?str=Lorem ipsum 𝌆 dolor sit ameͨ͆t.')
+      .get('/reverse')
+      .query({ str: 'Lorem ipsum 𝌆 dolor sit ameͨ͆t.' })
       .expect('Content-Type', /json/)
       .expect(200, {
         reversed: '.teͨ͆ma tis rolod 𝌆 muspi meroL'
